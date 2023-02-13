@@ -1,0 +1,55 @@
+<!-- I add a new webpage with a form to allow users to contact me
+I add a link "Contact Me" in the navbar of each page
+On the Home page is also a link "email me" that redirects users to the page "Contact me" -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to access bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!-- Link to access the css file -->
+    <link rel="stylesheet" href="myStyles.css" />
+    <title>Message Submitted</title>
+  </head>
+  <body>
+    <!-- I create the navbar containing the other webpages links in case users want to 
+    go back to a specific page after sending their messsage -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="cookies.html">Cookies</a>
+            <a class="nav-link" href="pies.html">Pies</a>
+            <a class="nav-link" href="cakes.html">Cakes</a>
+            <a class="nav-link" href="contactMe.html">Contact Me</a>
+            <a class="nav-link" href="saveForLater.html">Save For Later</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- I display a message to confirm that the message has been sent -->
+    <div>
+      <h1>Your message has been sent :)</h1>
+    </div>
+    <script src="myFavRecipes.js"></script>
+    <!-- Javascript link required to access some specific Bootstrap components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

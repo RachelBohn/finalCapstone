@@ -1,0 +1,196 @@
+<!-- This website represents a cooking blog with a few recipes that I particularly like.\
+To create this website, I used Bootstrap.
+The meaning of the classes that I used is explained in the css file-->
+
+<!-- I haven't added anything new in this html file for this task -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to access Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!-- Link to access Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Link to access the css file -->
+    <link rel="stylesheet" href="myStyles.css" />
+    <title>My Favourite Sweet Recipes</title>
+  </head>
+  <body>
+    <!-- Navbar created with Bootstrap -->
+    <!-- The navbar references disappear and a hamburger appear once the screen has
+    reached a width defined as small (and extra small). The navbar will stick to the top no matter where we are on the page -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand currentPage" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- The navbar contains all of the other webpages links -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="cookies.html">Cookies</a>
+            <a class="nav-link" href="pies.html">Pies</a>
+            <a class="nav-link" href="cakes.html">Cakes</a>
+            <a class="nav-link" href="contactMe.html">Contact Me</a>
+            <a class="nav-link" href="saveForLater.html">Save For Later</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- I created a container with two columns (9 units and 3 units) -->
+    <div class="container">
+      <h1>My Favourite Sweet Recipes</h1>
+      <div class="row">
+        <div class="col-9">
+          <h4>Recipes that are coming next week :</h4>
+          <!-- I created a table with two rows: one that contains images and one that contains their captions -->
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="imgHomePage"
+                  src="images/ChaussonsAuxPommes.jpeg"
+                  alt="Apple turnovers"
+                />
+                <figcaption>
+                  <p class="imgTitle">"Chaussons aux pommes"</p>
+                  <p class="italicCaption">- To eat at anytime of the day</p>
+                </figcaption>
+              </td>
+              <td>
+                <img
+                  class="imgHomePage"
+                  src="images/fondantChocolat.png"
+                  alt="Fondant au Chocolat"
+                />
+                <figcaption>
+                  <p class="imgTitle">"Fondant au chocolat"</p>
+                  <p class="italicCaption">- For Chocolate Lovers</p>
+                </figcaption>
+              </td>
+              <td>
+                <img
+                  class="imgHomePage"
+                  src="images/RoseDesSables.jpeg"
+                  alt="Roses des Sables"
+                />
+                <figcaption>
+                  <p class="imgTitle">"Roses des sables"</p>
+                  <p class="italicCaption">- Particularly loved at Christmas</p>
+                </figcaption>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- This section is about me and contains a paragraph, a block quote and an image -->
+        <div class="col-3" id="aboutMe">
+          <h4>About Me</h4>
+          <!-- I add in the paragraph a link "email me" that redirects users to the page "Contact Me" -->
+          <p>
+            Passionate about cooking since I was young, I love creating and
+            testing new recipes for my loved ones. <br />
+            I'd like to share some of my favourite sweet recipes with you and
+            hope you'll like them. <br />Please feel free to
+            <a href="contactMe.html">email me</a> if you have any question :)
+          </p>
+          <br />
+          <blockquote>
+            <p><em>People who love to eat are always the best people.</em></p>
+            <footer id="blockFooter">- Julia Child</footer>
+          </blockquote>
+          <img src="images/chef.jpeg" alt="Chef" />
+        </div>
+      </div>
+    </div>
+    <!-- I created a newsletter that receives two text inputs and contains radio buttons and a submit button -->
+    <div id="newsletter" class="container">
+      <p>
+        To get weekly recipes, please fill in the form below and subscribe to
+        the <b>Newsletter</b> :
+      </p>
+      <form>
+        <!-- The Name text input -->
+        <div class="row mb-3">
+          <label for="inputName" class="col-sm-2 col-form-label"
+            >Enter your Name</label
+          >
+          <div class="col-sm-6">
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <!-- The Email text input -->
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label"
+            >Enter your Email</label
+          >
+          <div class="col-sm-6">
+            <input type="email" class="form-control" />
+          </div>
+        </div>
+        <!-- The radio buttons -->
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Are you more...</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="gridRadios1">
+                Chocolate
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios2"
+                value="option2"
+              />
+              <label class="form-check-label" for="gridRadios2"> Fruits </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios3"
+                value="option3"
+              />
+              <label class="form-check-label" for="gridRadios3">
+                Both - It is so hard to choose
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- The Submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="myFavRecipes.js"></script>
+    <!-- Javascript link required to access some specific Bootstrap components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

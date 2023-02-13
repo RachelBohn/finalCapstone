@@ -1,0 +1,237 @@
+/* I added a color to the body background */
+body {
+  background-color: rgb(236, 223, 241);
+}
+
+/* I defined the "h1" color and its alignment and also the margins top and bottom */
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  color: rgba(90, 3, 90, 0.829);
+}
+
+/* I defined the "h4" color and also the margin bottom */
+h4 {
+  margin-bottom: 30px;
+  color: rgba(78, 3, 112, 0.925);
+}
+
+/* I defined the navbar background color and the font size of its text */
+.navbar {
+  background-color: rgb(88, 2, 105);
+  font-size: 20px;
+}
+
+/* I defined the color of the different sections contained in the navbar */
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+/* I defined the currentPage color to make it easier to know on what page the user is */
+.currentPage {
+  color: grey;
+}
+
+/* I defined the text alignment, the padding, the left margin and the border of the "About Me" section */
+#aboutMe {
+  text-align: center;
+  margin-left: 40px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* I defined the left margin of the first column */
+.col-9 {
+  margin-left: -40px;
+}
+
+/* I defined the width, height, bottom and right margins of the three images the home page contains */
+.imgHomePage {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+/* I defined the width, the height and the padding bottom of the two images that the three other pages contain */
+.imgCookiesPage,
+.imgPiesPage,
+.imgCakesPage {
+  width: 600px;
+  height: 500px;
+  padding-bottom: 5px;
+}
+
+/* This class represents all of the images that the website contains (except the chef image that has its own properties).
+I've here defined the alignment and the font-weight of the text */
+.imgTitle {
+  font-weight: 600;
+  text-align: center;
+}
+/* This class aligns the "bookmark" icon to the left */
+.bi-bookmark-fill {
+  margin-left: -30px;
+}
+.bi-bookmark-fill-purple {
+  color: purple;
+}
+
+/*That class represents the 'like' icon. Once users click on it, it gets red */
+.bi-heart-fill-red {
+  color: red;
+}
+
+/* This class is related to the "bookmark" and "like" buttons. They're contained in a col-1 dimension.
+ I removed the border and added the same color as the body background-color */
+.col-1 {
+  background-color: rgb(236, 223, 241);
+  border: none;
+}
+
+/* This class represents the input box where users enter their comments. I've defined the size of the input box */
+.inputBox {
+  padding-right: 230px;
+}
+
+/* This class represents the submit button when users submit their comments
+I've defined the border radius, the background color, the margin and the vertical alignment */
+.submitBtn {
+  border-radius: 10%;
+  background-color: rgba(155, 89, 155, 0.829);
+  margin: 20px;
+  vertical-align: top;
+}
+
+/* I've modified the margin-top of 'h6' */
+h6 {
+  margin-top: 40px;
+}
+
+/* This id represents the container where I add the saved recipes in the "Save For Later" page.
+I've defined the margin left */
+#container {
+  margin-left: 30px;
+}
+
+/* This class represents a piece of captions that I've set to "italic". 
+I've also defined the margin-top, the color and alignment of the text */
+.italicCaption {
+  color: rgb(97, 95, 95);
+  font-style: italic;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/* This attribute represents the footer we can find in the block quote.
+I've defined the text alignment and the margin top */
+#blockFooter {
+  text-align: right;
+  margin-top: -20px;
+}
+
+/* This attribute represents the newsletter section. I've defined the margin top of that section */
+#newsletter {
+  margin-top: -140px;
+}
+
+/* This class represents the preparation and cooking times of all recipes. 
+I've defined the margins, the padding top, the text alignment and a border */
+.recipeTime {
+  margin: 60px 50px 50px 50px;
+  border: black solid 2px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* This class represents the titles of all of the recipes.
+I've defined the size, the weight and the color of the text and also the margin top */
+.recipeTitles {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(74, 4, 121);
+  margin-top: 40px;
+}
+
+/* This class represents the links below the recipes.
+I've defined the size of the text, and the margins right and left and the background color to create blocks */
+.recipesLink {
+  font-size: 15px;
+  background-color: rgb(234, 203, 243);
+  margin-right: 110px;
+  margin-left: 5px;
+}
+
+/* I define the h5 color and margins left and bottom */
+h5 {
+  margin-bottom: 30px;
+  margin-left: 100px;
+  color: rgba(78, 3, 112, 0.925);
+}
+
+/* This attribute is about the form users can use to email me
+I define all of the margins */
+#formMsg {
+  margin: 30px 150px;
+}
+
+/* I created three breakpoints that trigger changes in the styling of the page */
+
+/* If the width of the page is between 1000px and 1300 px, the size of all images is going to change. */
+@media (max-width: 1300px) {
+  .imgHomePage {
+    width: 200px;
+    height: 200px;
+  }
+  .imgCookiesPage,
+  .imgPiesPage,
+  .imgCakesPage {
+    width: 500px;
+    height: 410px;
+  }
+}
+
+/* If the width of the page is between 800px and 1000 px. Are going to change:
+- The size of all of the images that the website contains 
+- The section "About Me that is going to disappear
+- The margin top of the newsletter 
+- The padding right of the input box where users can add comments */
+@media (max-width: 1000px) {
+  .imgHomePage {
+    width: 150px;
+    height: 150px;
+  }
+  .imgCookiesPage,
+  .imgPiesPage,
+  .imgCakesPage {
+    width: 400px;
+    height: 320px;
+    padding-bottom: 5px;
+  }
+  #aboutMe {
+    display: none;
+  }
+
+  #newsletter {
+    margin-top: 50px;
+  }
+
+  .inputBox {
+    padding-right: 150px;
+  }
+}
+
+/* If the width of the page is below 800px, the size of all images and the size of the input box are going to change */
+@media (max-width: 800px) {
+  .imgCookiesPage,
+  .imgPiesPage,
+  .imgCakesPage {
+    width: 300px;
+    height: 230px;
+  }
+
+  .inputBox {
+    padding-right: 40px;
+  }
+}

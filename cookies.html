@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to access Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <!-- Link to access Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Link to access the css file -->
+    <link rel="stylesheet" href="myStyles.css" />
+    <title>Cookies</title>
+  </head>
+  <!-- The page will load as soon as users open it  -->
+  <body onload="loadPage()">
+    <!-- The navbar contains all of the other webpages links -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link currentPage" href="cookies.html">Cookies</a>
+            <a class="nav-link" href="pies.html">Pies</a>
+            <a class="nav-link" href="cakes.html">Cakes</a>
+            <a class="nav-link" href="contactMe.html">Contact Me</a>
+            <a class="nav-link" href="saveForLater.html">Save For Later</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- I create a row with two columns that contains each an image, a caption, paragraphs, a list of ingredients
+    and a list of steps to follow for the baking -->
+    <div class="container">
+      <h1>Cookies</h1>
+      <div class="row">
+        <div id="cookie1" class="col-6">
+          <div>
+            <figure>
+              <img
+                class="imgCookiesPage"
+                src="images/cookies.jpeg"
+                alt="Cookies with chocolate chips"
+              />
+              <figcaption>
+                <div class="row btns">
+                  <div class="col-10">
+                    <p class="imgTitle">"Cookies with Chocolate chips"</p>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="recipeTime">
+              <p>
+                <b>Preparation time:</b> 10 min - <b>Baking time:</b> 9-11 min
+              </p>
+            </div>
+            <div class="ingredients">
+              <p class="recipeTitles">Ingredients:</p>
+              <ul>
+                <li><b>Eggs:</b> 2</li>
+                <li><b>Sugar:</b> 160-170g</li>
+                <li><b>Melted butter:</b> 170g</li>
+                <li><b>Flour: 300g</b></li>
+                <li><b>Baking powder:</b> 2 teaspoons</li>
+                <li>A pinch of <b>salt</b></li>
+                <li><b>Chocolate chips:</b> 200g</li>
+                <li>A pinch of <b>vanilla aroma</b> (optional)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="recipeTitles">Recipe:</p>
+              <ol>
+                <li>Preheat the oven to 180°C</li>
+                <li>
+                  Mix the eggs, sugar, melted butter (and vanilla aroma)
+                  together in a container
+                </li>
+                <li>
+                  Mix the flour, baking powder and salt in another container
+                </li>
+                <li>Mix the two container together</li>
+                <li>Add the chocolate chips</li>
+                <li>
+                  Use a spoon to drop large balls of dough on a baking paper and
+                  leave enough space between each of them as they'll spread out
+                </li>
+                <li>Bake for 9-11 min according to the size of the balls</li>
+                <li>
+                  Allow the cookies at least 20 min to cool on the tray to
+                  prevent them from breaking
+                </li>
+              </ol>
+              <p class="recipesLink">
+                This recipe comes from
+                <a
+                  href="https://cuisine.journaldesfemmes.fr/recette/310548-american-cookies"
+                  >this website</a
+                >. You can find many other recipes there.
+              </p>
+            </div>
+          </div>
+          <!-- I've created a container where users comments will be added -->
+          <div class="commentsContainer"></div>
+        </div>
+        <div id="cookie2" class="col-6">
+          <div>
+            <figure>
+              <img
+                class="imgCookiesPage"
+                src="images/brownieCookie.jpeg"
+                alt="Half cookies-half brownies"
+              />
+              <figcaption>
+                <div class="row btns">
+                  <div class="col-10">
+                    <p class="imgTitle">
+                      "Brownies-Cookies - Cookies with a chocolate melting
+                      heart"
+                    </p>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="recipeTime">
+              <p>
+                <b>Preparation time:</b> 10 min - <b>Baking time:</b> 10-12 min
+              </p>
+            </div>
+            <div class="ingredients">
+              <p class="recipeTitles">Ingredients:</p>
+              <ul>
+                <li><b>Eggs:</b> 2</li>
+                <li><b>Sugar:</b> 150g</li>
+                <li><b>Butter (cut in pieces):</b> 125g</li>
+                <li><b>Flour: 130g</b></li>
+                <li><b>Baking powder:</b> 1 teaspoon</li>
+                <li>A pinch of <b>salt</b></li>
+                <li><b>Chocolate chips:</b> 200g</li>
+                <li><b>Unsweetened Cacao powder: </b>3 tablespoons</li>
+              </ul>
+            </div>
+            <div>
+              <p class="recipeTitles">Recipe:</p>
+              <ol>
+                <li>
+                  Preheat the oven to 180°C and prepare all the ingredients
+                </li>
+                <li>
+                  Melt the butter and chocolate together on low heat, stirring
+                  constantly to prevent chocolate from burning. Once melted, set
+                  aside
+                </li>
+                <li>
+                  Mix the eggs and sugar together for at least 3 min and then
+                  add the chocolat-butter mix
+                </li>
+                <li>
+                  Mix the flour, salt, baking powder and cacao together and then
+                  add the mix to the chocolate mixture. Mix briefly just to
+                  combine
+                </li>
+                <li>
+                  Use a spoon to drop large balls of dough on a baking paper and
+                  leave enough space between each of them as they'll spread out
+                </li>
+                <li>Bake for 10-12 min according to the size of the balls</li>
+                <li>
+                  Allow the cookies at least 20 min to cool on the tray to
+                  prevent them from breaking
+                </li>
+              </ol>
+              <p class="recipesLink">
+                This recipe comes from
+                <a
+                  href="https://www.delscookingtwist.com/fudgy-chocolate-brownie-cookies/"
+                  >this website</a
+                >. You can find many other recipes there.
+              </p>
+            </div>
+          </div>
+          <!-- I've created a container where users comments will be added -->
+          <div class="commentsContainer"></div>
+        </div>
+      </div>
+    </div>
+    <script src="myFavRecipes.js"></script>
+
+    <!-- Javascript link required to access some specific Bootstrap components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
